@@ -11,9 +11,6 @@ body{
     overflow-x: hidden;
 }
 
-.navbar{
-    background-color: grey  ;
-}
 
 .container{
     display: flex;
@@ -132,7 +129,8 @@ form button{
     }
 
     ::placeholder{
-        font-size: 0.85rem;
+        font-size: 0.8rem;
+        text-align: center;
     }
 
     form button{
