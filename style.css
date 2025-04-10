@@ -6,12 +6,14 @@
 }
 
 body{
-    background: #43cea2; 
-    background: -webkit-linear-gradient(to right, #185a9d, #43cea2);  
-    background: linear-gradient(to right, #185a9d, #43cea2); 
+
     color: whitesmoke;
+    overflow-x: hidden;
 }
 
+.navbar{
+    background-color: grey  ;
+}
 
 h1{
     text-align: center;
@@ -101,10 +103,14 @@ form button{
    } 
 }
 
+
+
    @media (max-width:350px) {
     form {
-        height: 40px;
+        height: 46px;
         margin: 0;
+        flex-direction: column;
+        border-radius: 8px;
         gap: 0;
        
     }
@@ -115,9 +121,17 @@ form button{
 
     form button{
         font-size: 0.85rem; 
+        border-radius: 8px;
+        margin-top: 1rem;
+        padding: 8px 12px ;
+        width: 5.5rem;
+       
         
     }
-   }
+   
+
+
+
 
    #search-result img{
         width: 100%;
@@ -125,8 +139,18 @@ form button{
         object-fit:cover ;
    }
 
+}
 
 
+   footer{
+   
+    margin: 12px;
+    padding: 12px;
+    background-color: #698ff8;
+    color: white;
+   }
+
+  
 /* #search-result:hover img{
     transform: scale(1.1);
     transition-duration: 200ms;
