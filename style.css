@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background: #43cea2; 
+    background: -webkit-linear-gradient(to right, #185a9d, #43cea2);  
+    background: linear-gradient(to right, #185a9d, #43cea2); 
+    color: whitesmoke;
+}
+
+
+h1{
+    text-align: center;
+    margin: 100px auto 50px;
+}
+
+form{
+    border-radius: 12px;
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+    height: 65px;
+    background: #F1EFEC;
+    display: flex;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+
+form input{
+    flex: 1;
+    height: 100%;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    color: black;
+    font-size: 18px;
+    padding: 0 30px;
+}
+
+form button{
+    padding: 0 40px;
+    height: 100%;
+    background-color: #D2042D	;
+    color: #fff;
+    font-size: 18px;
+    border: 0;
+    outline: 0;
+    border-top-right-radius:12px ;
+    border-bottom-right-radius:12px ;
+    cursor: pointer;
+    
+}
+
+::placeholder{
+    color: gre;
+    font-size: 18px;
+}
+
+#show-more-btn{
+    background: #ff3929;
+    color: #fff;
+    border: 0;
+    outline: 0;
+    padding: 10px 20px;
+    border-radius: 4px;
+    margin: 10px auto 100px;
+    display: none;
+}
+
+#search-result{
+    width: 80%;
+    margin: 100px auto 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 40px;
+    
+
+}
+
+#search-result img{
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+
+@media (max-width:992px) {
+   #search-result{
+    grid-template-columns: 1fr;
+    width:80% ;
+    gap: 4rem;
+
+   } 
+
+   #search-result img{
+        width: 100%;
+        height:449px;
+        object-fit:cover;
+   }
+
+}
+
+/* #search-result:hover img{
+    transform: scale(1.1);
+    transition-duration: 200ms;
+} */
+
